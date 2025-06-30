@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grow a Garden Value Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <img src="banner.png" alt="Grow a Garden Banner" class="banner" />
+  <h1>🌿 Grow a Garden - Value Tracker</h1>
+  
+    <input type="text" id="search" placeholder="Search for a pet..." />
+    <div class="sort-controls">
+      <label>Sort by:</label>
+      <select id="sortOptions" onchange="sortByDropdown()">
+        <option value="">-- Select --</option>
+        <option value="value">Value</option>
+        <option value="demand">Demand</option>
+      </select>
+    </div>
+    
+  <table id="pet-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Pet</th>
+        <th onclick="sortTable(1)">Value</th>
+        <th onclick="sortTable(2)">Demand</th>
+        <th onclick="sortTable(3)">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Mimic Octopus</td><td>150T</td><td>10</td><td>Over</td></tr>
+      <tr><td>Raccoon</td><td>120T</td><td>10</td><td>Over</td></tr>
+      <tr><td>Disco Bee</td><td>100T</td><td>9</td><td>Over</td></tr>
+      <tr><td>Butterfly</td><td>50T</td><td>8</td><td>Over</td></tr>
+      <tr><td>Dragonfly</td><td>45T</td><td>8</td><td>Over</td></tr>
+      <tr><td>Queen Bee</td><td>20T</td><td>9</td><td>Over</td></tr>
+      <tr><td>Red Fox</td><td>3T</td><td>7</td><td>Over</td></tr>
+      <tr><td>Chicken Zombie</td><td>2T</td><td>7</td><td>Over</td></tr>
+      <tr><td>Praying Mantis</td><td>25B</td><td>6</td><td>Over</td></tr>
+      <tr><td>Giant Ant</td><td>2B</td><td>5</td><td>Over</td></tr>
+      <tr><td>Red Giant Ant</td><td>25B</td><td>5</td><td>Over</td></tr>
+      <tr><td>Night Owl</td><td>2.5B</td><td>5</td><td>Fair</td></tr>
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
